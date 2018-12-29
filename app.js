@@ -1,82 +1,82 @@
-const media = [
+const server = [
     {
-      title: 'EHRDB-P1', 
+      serverName: 'EHRDB-P1', 
       description: "EHR Database Server 1.",
       type: 'Clincal App',
-      contributor: '',
+      sysAdmin: '',
       showDetail: false,
 
     },
     {
-      title: 'EHRDB-P2', 
+      serverName: 'EHRDB-P2', 
       description: "EHR Database Server 1.",
       type: 'Clincal App',
-      contributor: 'Dennis',
+      sysAdmin: 'Dennis',
       showDetail: false,
     },
     {
-      title: 'EHRDB-P3', 
+      serverName: 'EHRDB-P3', 
       description: "EHR Database Server 1.",
       type: 'Clincal App',
-      contributor: '',
+      sysAdmin: '',
       showDetail: false,
     },
     {
-      title: 'FINDB-P4', 
+      serverName: 'FINDB-P4', 
       description: "EHR Database Server 1.",
       type: 'Finance App',
-      contributor: 'Dennis',
+      sysAdmin: 'Dennis',
       showDetail: false,
     },
     {
-      title: 'HRDB-P5', 
+      serverName: 'HRDB-P5', 
       description: "EHR Database Server 1.",
       type: 'HR App',
-      contributor: 'Dennis',
+      sysAdmin: 'Dennis',
       showDetail: false,
     },
     {
-      title: 'EHRDB-P6', 
+      serverName: 'EHRDB-P6', 
       description: "EHR Database Server 1.",
       type: 'Clincal App',
-      contributor: 'Dennis',
+      sysAdmin: 'Dennis',
       showDetail: false,
     },
     {
-      title: 'HRDB-P7', 
+      serverName: 'HRDB-P7', 
       description: "EHR Database Server 1.",
       type: 'HR App',
-      contributor: 'Dennis',
+      sysAdmin: 'Dennis',
       showDetail: false,
     }
   ]
 
 const app = new Vue({
-    el: '#media-list',
+    el: '#server-list',
     data: {
-      title: 'Local Systems List',
-      mediaList: media,
+      serverName: 'Local Systems List',
+      serverList: server,
       type: '',
-      contributor: ''
+      sysAdmin: ''
     },
     methods: {
-      toggleDetails: function(media){
-        media.showDetail = !media.showDetail
+      toggleDetails: function(server){
+        server.showDetail = !server.showDetail
       },
       filterList: function(){
         this.type = event.target.value;
         console.log(this.type);
       },
-      filterContributor: function(){
-        this.contributor = event.target.value;
-        console.log(this.contributor);
+      filtersysAdmin: function(){
+        this.sysAdmin = event.target.value;
+        console.log(this.sysAdmin);
       }
 
     },
     computed: {
       uniqueItemList: function(){
         const types = [];
-        this.mediaList.forEach((item)=>{
+        this.serverList.forEach((item)=>{
           if(!types.includes(item.type)){
             types.push(item.type);
           }

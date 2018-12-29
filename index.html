@@ -10,21 +10,21 @@
 </head>
 <body>
   <div class="container">
-    <div id="media-list">
-      <h1>{{ title }}</h1>
+    <div id="server-list">
+      <h1>{{ serverName }}</h1>
       <select v-on:change="filterList">
         <option value=''>Select Application</option>
         <option v-for='item in uniqueItemList'> {{item}} </option>     
       </select>
        <ul>
-        <li v-show="type === '' || type === media.type" 
-        v-for="media in mediaList" 
-        v-on:click="toggleDetails(media)" v-bind:class="{less: media.showDetail, more: !media.showDetail}">
-          <h3>{{media.title}}</h3> 
-          <div v-show='media.showDetail'>
-            <p>Role: {{media.description}}</p>
-            <p v-if="media.contributor" class="byline">Owner {{media.contributor}}</p>
-            <p>Application: {{media.type}}</p>
+        <li v-show="type === '' || type === server.type" 
+        v-for="server in serverList" 
+        v-on:click="toggleDetails(server)" v-bind:class="{less: server.showDetail, more: !server.showDetail}">
+          <h3>{{server.serverName}}</h3> 
+          <div v-show='server.showDetail'>
+            <p>Role: {{server.description}}</p>
+            <p v-if="server.sysAdmin" class="byline">Owner {{server.sysAdmin}}</p>
+            <p>Application: {{server.type}}</p>
           </div>
         </li>
       </ul>
