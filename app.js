@@ -1,6 +1,6 @@
 const media = [
     {
-      title: 'FHCPEHRDB-P1', 
+      title: 'EHRDB-P1', 
       description: "EHR Database Server 1.",
       type: 'Clincal App',
       contributor: '',
@@ -8,42 +8,42 @@ const media = [
 
     },
     {
-      title: 'FHCPEHRDB-P2', 
+      title: 'EHRDB-P2', 
       description: "EHR Database Server 1.",
       type: 'Clincal App',
       contributor: 'Dennis',
       showDetail: false,
     },
     {
-      title: 'FHCPEHRDB-P3', 
+      title: 'EHRDB-P3', 
       description: "EHR Database Server 1.",
       type: 'Clincal App',
       contributor: '',
       showDetail: false,
     },
     {
-      title: 'FHCPEHRDB-P4', 
+      title: 'EHRDB-P4', 
       description: "EHR Database Server 1.",
       type: 'Finance App',
       contributor: 'Dennis',
       showDetail: false,
     },
     {
-      title: 'FHCPEHRDB-P5', 
+      title: 'EHRDB-P5', 
       description: "EHR Database Server 1.",
       type: 'HR App',
       contributor: 'Dennis',
       showDetail: false,
     },
     {
-      title: 'FHCPEHRDB-P6', 
+      title: 'EHRDB-P6', 
       description: "EHR Database Server 1.",
       type: 'EHR Clincal App',
       contributor: 'Dennis',
       showDetail: false,
     },
     {
-      title: 'FHCPEHRDB-P7', 
+      title: 'PEHRDB-P7', 
       description: "EHR Database Server 1.",
       type: 'EHR Clincal App',
       contributor: 'Dennis',
