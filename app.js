@@ -22,14 +22,14 @@ const media = [
       showDetail: false,
     },
     {
-      title: 'EHRDB-P4', 
+      title: 'FINDB-P4', 
       description: "EHR Database Server 1.",
       type: 'Finance App',
       contributor: 'Dennis',
       showDetail: false,
     },
     {
-      title: 'EHRDB-P5', 
+      title: 'HRDB-P5', 
       description: "EHR Database Server 1.",
       type: 'HR App',
       contributor: 'Dennis',
@@ -38,14 +38,14 @@ const media = [
     {
       title: 'EHRDB-P6', 
       description: "EHR Database Server 1.",
-      type: 'EHR Clincal App',
+      type: 'Clincal App',
       contributor: 'Dennis',
       showDetail: false,
     },
     {
-      title: 'PEHRDB-P7', 
+      title: 'HRDB-P7', 
       description: "EHR Database Server 1.",
-      type: 'EHR Clincal App',
+      type: 'HR App',
       contributor: 'Dennis',
       showDetail: false,
     }
@@ -72,6 +72,17 @@ const app = new Vue({
         console.log(this.contributor);
       }
 
+    },
+    computed: {
+      uniqueItemList: function(){
+        const types = [];
+        this.mediaList.forEach((item)=>{
+          if(!types.includes(item.type)){
+            types.push(item.type);
+          }
+        });
+        return types;
+      }
     }
     
   });
