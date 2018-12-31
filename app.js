@@ -1,9 +1,10 @@
 const server = [
     {
-      serverName: 'EHRDB-P1', 
-      description: "EHR Database Server 1.",
-      type: 'Clincal App',
+      serverName: 'WEB-P1', 
+      description: "Web Server 1.",
+      type: 'Web App',
       sysAdmin: '',
+      vulList: ["vul1", "vul2", "vul3"],
       showDetail: false,
 
     },
@@ -56,6 +57,7 @@ const app = new Vue({
     data: {
       serverName: 'Local Systems List',
       serverList: server,
+      vulList: '',
       type: '',
       sysAdmin: ''
     },
