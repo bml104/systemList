@@ -7,7 +7,7 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   
-  <title>Systems List 1.1</title>
+  <title>Systems List 1.2</title>
 </head>
 <body>
   <div class="container">
@@ -25,8 +25,7 @@
           <div v-show='server.showDetail'>
             <p>Role: {{server.description}}</p>
             <p v-if="server.sysAdmin" class="byline">Owner {{server.sysAdmin}}</p>
-            <p>Application: {{server.type}}</p>
-            <p v-for='vul in vulList'>test</p>        
+            <p>Application: {{server.type}}</p>                 
           </div>
         </li>
       </ul>
