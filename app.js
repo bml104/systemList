@@ -4,7 +4,7 @@ const server = [
       description: "Web Server 1.",
       type: 'Web App',
       sysAdmin: '',
-      vulList: ["vul1", "vul2", "vul3"],
+      vulList: [ 'test1', 'vul3'],
       showDetail: false,
 
     },

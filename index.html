@@ -25,7 +25,12 @@
           <div v-show='server.showDetail'>
             <p>Role: {{server.description}}</p>
             <p v-if="server.sysAdmin" class="byline">Owner {{server.sysAdmin}}</p>
-            <p>Application: {{server.type}}</p>                 
+            <p>Application: {{server.type}}</p>
+            <ul>
+              <li v-for="vul in vulList">
+                <p>test</p>
+              </li>
+            </ul>                 
           </div>
         </li>
       </ul>
